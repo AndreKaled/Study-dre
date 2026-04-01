@@ -123,7 +123,7 @@ Quando rodamos `double = gerarMultiplicador 2`, a variável `double` não guarda
 
 ## Monads
 er...ainda tô bugado nessa parte, o professor não comentou mas o Gemini falou que é importante, vou ver melhor depois mas para quem quiser, já anexei um link que me ajudou +/- (ultimo link)
-![](assets/holy_shit.png)
+![](../assets/holy_shit.png)
 
 ## Ref:
 - https://learnyouahaskell.github.io
