@@ -2,6 +2,7 @@
 # A arte de não mudar nada
 No mundo imperativo que estamos acostumados (C, Java sem OO), a gente trata a memória como um quadro branco que a gente fica riscando e apagando (isso é um estado mutável), no funcional a gente passa a tratar a memória como um livro: uma vez escrito, o dado é eterno. Quer mudar algo? Escreve uma página nova (cria um novo dado).
 > [!TIP] 
+> #### Larga o dogmaaaa
 > Larga o dogma de imperativo, é tipo português, é só um jeito de falar, mas tem o inglês, o francês, o espanhol, o latim... Aprender funcional expande sua semântica de resolução de problemas.
 
 ## Pilar da imutabilidade
@@ -17,8 +18,9 @@ Uma função funcional é como uma fórmula matemática $f(x) = y$. Ela tem o co
 Propriedades legais:
 * **Determinismo:** mesmo input -> mesmo output
 * **Sem efeitos colaterais:** não altera nada fora dela
-> [!NOTE] 
-Referencial Transparency: Você pode substituir a chamada da função pelo resultado sem mudar o comportamento do programa. Ex: Se $f(10) = 20$, qualquer lugar com $f(10)$ pode virar $20$. Isso facilita Otimização, Paralelismo e Testes.
+>[!NOTE]
+>#### Referencial Transparency: 
+ >Você pode substituir a chamada da função pelo resultado sem mudar o comportamento do programa. Ex: Se $f(10) = 20$, qualquer lugar com $f(10)$ pode virar $20$. Isso facilita Otimização, Paralelismo e Testes.
 ## Map, Filter e Reduce
 Em vez de fazer `for` ou `while` infinitos ou não, a gente usa transformações de listas.
 ### Map
@@ -97,6 +99,7 @@ print (processarLista (\x -> x * x) nums) -- injetamos "elevar ao quadrado"
 print (processarLista (\x -> x + 10) nums) -- Injetamos "somar dez"
 ```
 > [!NOTE]
+> #### Comentário nerd
 > Perceba que `processarLista` é genérica. Ela não sabe o que vai acontecer com o número, ela só sabe como percorrer a estrutura e aplicar a função injetada.
 #### Fábrica de funções
 Aqui entra a mágica de retornar funções, tu pode criar uma função que gera outras funções customizadas. Você cria uma função "mestra" que, ao ser chamada, te devolve uma função nova e já pré-configurada.
@@ -115,6 +118,7 @@ main = do
     print (triple 5) -- Retorna 15
 ```
 >[!TIP]
+>#### O que aconteceu aqui?
 Quando rodamos `double = gerarMultiplicador 2`, a variável `double` não guarda um número, ela guarda uma **função viva** que "lembra" que o seu `fator` é 2.
 
 ## Monads
