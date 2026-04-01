@@ -1,8 +1,9 @@
 
 # A arte de não mudar nada
 No mundo imperativo que estamos acostumados (C, Java sem OO), a gente trata a memória como um quadro branco que a gente fica riscando e apagando (isso é um estado mutável), no funcional a gente passa a tratar a memória como um livro: uma vez escrito, o dado é eterno. Quer mudar algo? Escreve uma página nova (cria um novo dado).
->[!TIP] Torne-se um poliglota das linguagens
-Dica: larga o dogma de imperativo, é tipo português, é só um jeito de falar, mas tem o inglês, o francês, o espanhol, o latim... Aprender funcional expande sua semântica de resolução de problemas.
+> [!TIP] 
+> Torne-se um poliglota das linguagens
+> larga o dogma de imperativo, é tipo português, é só um jeito de falar, mas tem o inglês, o francês, o espanhol, o latim... Aprender funcional expande sua semântica de resolução de problemas.
 
 ## Pilar da imutabilidade
 Aqui não tem essa de `x = x + 1`. Se `x` é 10, ele vai morrer sendo 10, isso garante que ele permaneça desde sempre no estado imutável e sem permissão para outra função por exemplo, vir e mudar o valor de `x`.
